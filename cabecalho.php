@@ -2,6 +2,7 @@
 <head>
 	<title> Minha loja</title>
 	<meta charset="utf-8">
+	<meta name="theme-color" content="red">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/loja.css">
 </head>
