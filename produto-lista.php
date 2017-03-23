@@ -16,8 +16,12 @@
 	<tr>
 		<td><?=$produto['nome'] ?></td>
 		<td><?=$produto['preco']?></td>
+		<td><?=substr($produto['descricao'],0,15)?></td>
 		<td>
-			<a href="remove-produto.php?id=<?=$produto['id']?>" class="text-danger"> R e m o v e r</a>
+			<form action="remove-produto.php" method="post">
+			<input type="hidden" name="id" value="<?=$produto['id']?>">
+			<button class="btn-danger"> R e m o v e r</button>
+			</form>
 		</td>
 	</tr>
 	<?php
